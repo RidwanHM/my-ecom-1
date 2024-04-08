@@ -1,4 +1,4 @@
-// File: /Users/ridwan/my-ecom-1/app/checkoutSuccess/page.js
+// File: /Users/ridwan/my-ecom-1-1/app/checkoutSuccess/page.js
 import * as entry from '../../../../app/checkoutSuccess/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

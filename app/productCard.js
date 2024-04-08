@@ -37,24 +37,23 @@ export default function ProductCard({ product }) {
 
   return (
     <div>
-      <div onClick={clickProduct} className='flex flex-col shadow bg-white hover:shadow-lg cursor-pointer'>
+      <div onClick={clickProduct} className="flex flex-col shadow bg-white hover:shadow-lg cursor-pointer transition-shadow duration-200 ease-in-out">
         <img
-        src={imageUrl}
-        alt={title}
-        className="w-full h-full max-h-40 object-cover"
-      />
+          src={imageUrl}
+          alt={title}
+          className="w-full max-h-40 object-cover"
+        />
       </div>
-      <div className='flex flex-col gap-2 p-4'>
-        <div className='flex items-center justify-between'>
-          <h2>{title}</h2>
-          <p>Price: ${price}</p>
+      <div className="flex flex-col gap-2 p-4">
+        <div className="flex items-center justify-between">
+          <h2 className="text-lg font-semibold">{title}</h2> {/* Enhance title legibility */}
+          <p className="font-medium">Price: <span className="font-bold">${price}</span></p> {/* Emphasize price */}
         </div>
-        <p>{description}</p>
-        <button onClick={handleAddToCart} className="bg-slate-700 text-white hover:bg-slate-500 cursor-pointer ml-auto px-4 py-2">
-            Add to Cart
-          </button>
-      </div>  
+        <p className="text-gray-600">{description}</p> {/* Subtle text color for description */}
+        <button onClick={handleAddToCart} className="mt-2 bg-blue-600 text-white hover:bg-blue-700 cursor-pointer ml-auto px-4 py-2 transition-colors duration-200 ease-in-out rounded">
+          Add to Cart
+        </button>
+      </div>
     </div>
-    
   );
 }

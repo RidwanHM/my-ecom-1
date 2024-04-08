@@ -1,5 +1,6 @@
 {
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/product/page": "app/product/page.js",
+  "/contact/page": "app/contact/page.js",
   "/checkoutSuccess/page": "app/checkoutSuccess/page.js"
 }

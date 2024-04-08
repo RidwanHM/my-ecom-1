@@ -20,10 +20,10 @@ export default function Header() {
         <Modal />
       )}
       <Link href="/">
-        <h1 className="uppercase cursor-pointer">Shop</h1>
+        <h1 className="uppercase cursor-pointer">R&B Store</h1>
       </Link>
       <Link href="/contact">
-      <h2 className="text-sm hover:opacity-40 cursor-pointer">Contact</h2>
+        <h1 className="uppercase cursor-pointer">Contact</h1>
       </Link>
       <div onClick={toggleModal} className="relative grid cursor-pointer group place-items-center"> {/* Added onClick event */}
         {cartItems.length > 0 && (
